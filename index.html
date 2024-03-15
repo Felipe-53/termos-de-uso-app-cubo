@@ -229,8 +229,7 @@
 
     <h3>3. Controlador e Operador de Dados Pessoais</h3>
     <p>
-      A Prefeitura Municipal de {{ $city_name }}, por meio da Secretaria Municipal de
-      Administração, é responsável pelo tratamento dos dados (controlador de
+      A Prefeitura Municipal de {{ $city_name }}, por meio da Secretaria {{ $user_data_secretary }}, é responsável pelo tratamento dos dados (controlador de
       dados pessoais – <em>data controller</em>). Nesse cenário, é responsável
       por determinar os dados a serem coletados, suas finalidades, seu tempo de
       guarda e todas as demais decisões relativas ao tratamento realizado.
@@ -316,6 +315,7 @@
     </p>
 
     <h3>8. Encarregado de Proteção de Dados</h3>
+    <p>{{ $user_data_secretary }}</p>
     <p>{{ $privacy_email }}</p>
 
     <h3>9. Alterações</h3>
