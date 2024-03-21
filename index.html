@@ -7,14 +7,15 @@
     <title>Termos de Uso</title>
   </head>
   <body>
+    <h1>{{ $app_name }}</h1>
     <p>
       O presente documento contém informações relacionadas ao
-      <b>JOÃO PESSOA NA PALMA DA MÃO</b>, especialmente a respeito do modo como
-      tratamos, total ou parcialmente, de forma automatizada ou não, os dados
-      pessoais dos usuários que acessam nosso aplicativo. Seu objetivo é
-      esclarecer aos interessados acerca dos tipos de dados que são coletados,
-      dos motivos/finalidades da coleta e da forma como o usuário poderá
-      atualizar, gerenciar ou excluir essas informações.
+      <b>{{ $app_name }}</b>, especialmente a respeito do modo como tratamos,
+      total ou parcialmente, de forma automatizada ou não, os dados pessoais dos
+      usuários que acessam nosso aplicativo. Seu objetivo é esclarecer aos
+      interessados acerca dos tipos de dados que são coletados, dos
+      motivos/finalidades da coleta e da forma como o usuário poderá atualizar,
+      gerenciar ou excluir essas informações.
     </p>
 
     <p>
@@ -26,23 +27,21 @@
       consultar periodicamente esta seção.
     </p>
 
-    <h3>
-      1. Da Plataforma <b>JOÃO PESSOA NA PALMA DA Mão</b> e vínculos existentes
-    </h3>
+    <h3>1. Da Plataforma <b>{{ $app_name }}</b> e vínculos existentes</h3>
 
     <p>
-      O <b>JOÃO PESSOA NA PALMA DA MÃO</b> é uma plataforma desenvolvida para
-      facilitar a vida do cidadão, deixando na palma de sua mão o agendamento de
-      serviços, como atendimento domiciliar, realização de exames, realização de
+      O <b>{{ $app_name }}</b> é uma plataforma desenvolvida para facilitar a
+      vida do cidadão, deixando na palma de sua mão o agendamento de serviços,
+      como atendimento domiciliar, realização de exames, realização de
       requerimentos relacionados à limpeza e manutenção de áreas públicas, por
       exemplo, além de várias outras facilidades.
     </p>
 
     <p>
-      Nesse cenário, o <b>JOÃO PESSOA NA PALMA DA MÃO</b> se presta a, por meio
-      do uso dos cidadãos pessoenses – você, titular de dados pessoais
-      interessado! -, facilitar o acesso aos serviços prestados pela Prefeitura
-      Municipal de João Pessoa, agilizando as demandas e evitando filas.
+      Nesse cenário, o <b>{{ $app_name }}</b> se presta a, por meio do uso dos
+      cidadãos – você, titular de dados pessoais interessado! -,
+      facilitar o acesso aos serviços prestados pela Prefeitura Municipal de {{
+      $city_name }}, agilizando as demandas e evitando filas.
     </p>
 
     <p>
@@ -51,31 +50,32 @@
       usuário quando do uso do aplicativo, a exemplo de requerimento de serviços
       de limpeza, manutenção de áreas públicas, emissão de Cartão SUS,
       agendamento de atendimento domiciliar, denúncia de lixo, dentre outras
-      facilidades relacionadas exclusivamente à Prefeitura Municipal de João
-      Pessoa.
+      facilidades relacionadas exclusivamente à Prefeitura Municipal de {{
+      $city_name }}.
     </p>
 
     <p>
       Os dados coletados serão armazenados em servidores próprios e/ou de
-      responsabilidade da Prefeitura Municipal de João Pessoa e as empresas
+      responsabilidade da Prefeitura Municipal de {{ $city_name }} e as empresas
       contratadas para tal fim, localizados no Brasil ou em países ou organismos
       internacionais que proporcionem grau de proteção de dados pessoais
       adequados à legislação brasileira.
     </p>
 
     <b>
-      A Plataforma JOÃO PESSOA NA PALMA DA MÃO é estritamente vinculada à
-      Prefeitura Municipal de João Pessoa, cabendo a esta a decisão de quais
-      dados pessoais serão coletados para requerimento/agendamento de cada um
-      dos serviços disponibilizados na plataforma.
+      A Plataforma {{ $app_name }} é estritamente vinculada à Prefeitura
+      Municipal de {{ $city_name }}, cabendo a esta a decisão de quais dados
+      pessoais serão coletados para requerimento/agendamento de cada um dos
+      serviços disponibilizados na plataforma.
     </b>
 
     <p>
       Ademais, todos os dados pessoais serão acessados pela Prefeitura Municipal
-      de João Pessoa, seus servidores e prepostos, bem como empresas contratadas
-      para este fim determinado, cujo tratamento será identificado. Nesse
-      cenário, cabe à Prefeitura Municipal de João Pessoa editar regras de uso
-      de tais dados para seus prepostos, servidores e colaboradores.
+      de {{ $city_name }}, seus servidores e prepostos, bem como empresas
+      contratadas para este fim determinado, cujo tratamento será identificado.
+      Nesse cenário, cabe à Prefeitura Municipal de {{ $city_name }} editar
+      regras de uso de tais dados para seus prepostos, servidores e
+      colaboradores.
     </p>
 
     <h3>2. Coleta e tratamento de dados pessoas</h3>
@@ -83,10 +83,10 @@
     <p>
       A presente Política de Privacidade visa assegurar que seus dados pessoais
       não serão divulgados a terceiros para fins comerciais, ficando restritos à
-      Prefeitura Municipal de João Pessoa, as empresas contratadas para
+      Prefeitura Municipal de {{ $city_name }}, as empresas contratadas para
       gerenciamento da presente plataforma e Órgãos Públicos para os quais os
       dados serão encaminhados para realização do serviço solicitado, pesquisas
-      de satisfação ou outras campanhas ativas da PMJP.
+      de satisfação ou outras campanhas ativas da PM{{ $city_acronym }}.
     </p>
 
     <h4>2.1. Quando e quais dados serão coletados?</h4>
@@ -122,9 +122,9 @@
 
     <p>
       Sem prejuízo da base legal de consentimento, tem-se claro que eventuais
-      dados pessoais poderão ser coletados pela Prefeitura Municipal de João
-      Pessoa e seus prepostos, por meio de funcionalidades da Plataforma Cidade
-      Conectada, como chat/bate-papo, observando uma das bases legais
+      dados pessoais poderão ser coletados pela Prefeitura Municipal de {{
+      $city_name }} e seus prepostos, por meio de funcionalidades da Plataforma
+      Cidade Conectada, como chat/bate-papo, observando uma das bases legais
       pertinentes, como dispõe o art. 7º, II, III, IV e outros.
     </p>
 
@@ -136,11 +136,11 @@
 
     <p>
       Além disso, necessário se faz pontuar que o funcionamento da Plataforma
-      <b> JOÃO PESSOA NA PALMA DA MÃO </b>está vinculado aos bancos de dados da
-      Prefeitura Municipal de João Pessoa, especialmente os dados coletados por
-      meio da plataforma Vacina João Pessoa. Logo, dados coletados quando do
-      cadastro e/ou utilização do Vacina João Pessoa poderão ser imediatamente
-      migrados para Plataforma <b>JOÃO PESSOA NA PALMA DA MÃO.</b>
+      <b> {{ $app_name }} </b>está vinculado aos bancos de dados da Prefeitura
+      Municipal de {{ $city_name }}, especialmente os dados coletados por meio
+      da plataforma Vacina {{$city_name}}. Logo, dados coletados quando do
+      cadastro e/ou utilização do Vacina {{$city_name}} poderão ser
+      imediatamente migrados para Plataforma <b>{{ $app_name }}</b>
     </p>
 
     <h4>2.2. Finalidade da utilização de dados</h4>
@@ -168,8 +168,8 @@
 
     <p>
       Os dados coletados serão armazenados em servidores e bancos de dados de
-      titularidade e/ou responsabilidade exclusiva da Prefeitura Municipal de
-      João Pessoa, localizados em território brasileiro ou em países que
+      titularidade e/ou responsabilidade exclusiva da Prefeitura Municipal de {{
+      $city_name }}, localizados em território brasileiro ou em países que
       proporcionem grau de proteção adequados à legislação brasileira, como os
       Estados Unidos da América.
     </p>
