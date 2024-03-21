@@ -201,11 +201,11 @@
       especialmente quando do cadastro perante a Plataforma, o usuário manifesta
       conhecer e concordar com os termos aqui estabelecidos; na oportunidade, o
       usuário consente com o tratamento de dados pessoais a ser realizado pela
-      Prefeitura Municipal de João Pessoa, de forma livre e desimpedida.
+      Prefeitura Municipal de {{ $city_name }}, de forma livre e desimpedida.
     </p>
     <p>
       O usuário tem direito de retirar o seu consentimento a qualquer tempo, por
-      meio de contato para o e-mail: privacidade@pmjp.com.br.
+      meio de contato para o e-mail: {{ $privacy_email }}.
     </p>
     <p>
       Ademais, o usuário declara-se ciente que, caso não concorde com esta
@@ -222,15 +222,14 @@
       a fim de personalizar os serviços oferecidos.
     </p>
     <p>
-      O usuário da Plataforma JOÃO PESSOA NA PALMA DA MÃO manifesta conhecer e
+      O usuário da Plataforma {{ $app_name }} manifesta conhecer e
       aceitar que pode ser utilizado sistema de coleta de dados de navegação
       mediante a utilização de cookies.
     </p>
 
     <h3>3. Controlador e Operador de Dados Pessoais</h3>
     <p>
-      A Prefeitura Municipal de João Pessoa, por meio da Secretaria Municipal de
-      Administração, é responsável pelo tratamento dos dados (controlador de
+      A Prefeitura Municipal de {{ $city_name }}, por meio da {{ $user_data_secretary }}, é responsável pelo tratamento dos dados (controlador de
       dados pessoais – <em>data controller</em>). Nesse cenário, é responsável
       por determinar os dados a serem coletados, suas finalidades, seu tempo de
       guarda e todas as demais decisões relativas ao tratamento realizado.
@@ -238,12 +237,12 @@
     <p>
       A Cubo Tecnologia é considerada operadora de dados pessoais, realizando
       todo o tratamento de dados pessoais conforme determinação da Prefeitura
-      Municipal de João Pessoa.
+      Municipal de {{ $city_name }}.
     </p>
 
     <h3>
       4. Como os servidores, prepostos e empresas contratadas para gerenciamento
-      da plataforma pela Prefeitura Municipal de João Pessoa tratam os dados
+      da plataforma pela Prefeitura Municipal de {{ $city_name }} tratam os dados
       pessoais coletados?
     </h3>
     <p>
@@ -262,7 +261,7 @@
       análise nesses dados.
     </p>
     <p>
-      Quanto aos servidores e prepostos da Prefeitura Municipal de João Pessoa,
+      Quanto aos servidores e prepostos da Prefeitura Municipal de {{ $city_name }},
       esses são constantemente capacitados para garantir segurança aos dados
       pessoais tratados.
     </p>
@@ -275,8 +274,7 @@
       login e senha).
     </p>
     <p>
-      Os acessos a qualquer dos dados pessoais tratados por meio do uso do JOÃO
-      PESSOA NA PALMA DA MÃO são feitos por meio de senhas, que identificam o
+      Os acessos a qualquer dos dados pessoais tratados por meio do uso do {{ $app_name }} são feitos por meio de senhas, que identificam o
       usuário, a fim de que registros de todos os acessos sejam mantidos.
     </p>
     <p>
@@ -287,7 +285,7 @@
 
     <h3>6. Compartilhamento de dados pessoais</h3>
     <p>
-      A Prefeitura Municipal de João Pessoa pode compartilhar seus dados
+      A Prefeitura Municipal de {{ $city_name }} pode compartilhar seus dados
       pessoais com Órgãos Reguladores, Órgãos Fiscalizadores, outras autoridades
       e órgãos oficiais ou empresas de auditoria, com o propósito de cumprir a
       legislação vigente ou atender demandas legais.
@@ -313,31 +311,30 @@
       e transferir as informações pessoais detidas pelo website, nos termos da
       Lei nº 12.965/2014 (Marco Civil da Internet), bem como com a Lei
       13.709/2018 (Lei Geral de Proteção de Dados), contatando o Encarregado
-      (DPO) por meio do e-mail privacidade@pmjp.com.br.
+      (DPO) por meio do e-mail {{ $privacy_email }}.
     </p>
 
     <h3>8. Encarregado de Proteção de Dados</h3>
-    <p>privacidade@pmjp.com.br</p>
+    <p>{{ $user_data_secretary }}</p>
+    <p>{{ $privacy_email }}</p>
 
     <h3>9. Alterações</h3>
     <p>
-      A Prefeitura Municipal de João Pessoa poderá alterar este documento a
+      A Prefeitura Municipal de {{ $city_name }} poderá alterar este documento a
       qualquer momento. Cada uma das versões do Aviso de Privacidade conterá as
       informações de data de vigência e versão no início do documento para
-      facilitar a identificação dos usuários. Você também poderá Secretaria
-      Municipal de AdministraçãoSecretaria Municipal de Administraçãosolicitar
-      uma versão antiga do Aviso de Privacidade para consulta, caso necessite.
+      facilitar a identificação dos usuários. Você também poderá solicitar à {{ $user_data_secretary }} uma versão antiga do Aviso de Privacidade para consulta, caso necessite.
     </p>
     <p>
       A presente versão desta Política de Privacidade foi atualizada pela última
-      vez em 12/03/2024.
+      vez em {{ $last_updated_at }}.
     </p>
 
     <h3>10. Foro</h3>
     <p>
       Esse Aviso de Privacidade é regido pelas leis da República Federativa do
       Brasil. Todas as controvérsias deste documento serão solucionadas pelo
-      foro da Comarca de João Pessoa, Estado da Paraíba, Brasil, com exclusão de
+      foro da Comarca de {{ $city_name }}, {{ $state_name }} , Brasil, com exclusão de
       qualquer outro, por mais privilegiado que seja ou venha a ser.
     </p>
   </body>
